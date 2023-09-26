@@ -1,0 +1,10 @@
+<launch>
+<!-- RML-63 Driver -->
+  <node  name="rm_driver" pkg="rm_driver" type="rm_driver" respawn="false" output="screen">
+  </node>
+
+
+<!-- Moveit -->
+  <include file="$(find rml_63_moveit_config)/launch/demo_realrobot.launch">
+  </include>
+</launch>
